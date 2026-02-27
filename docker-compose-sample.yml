@@ -1,6 +1,6 @@
 services:
-  website-test:
-    image: ghcr.io/asefg482/php-nginx:${PHP_VERSION:-8.2}
+  website:
+    image: ghcr.io/asefg482/wp-php-docker:${PHP_VERSION:-8.2}
     platform: linux/amd64
     env_file:
       - .env
@@ -16,7 +16,7 @@ services:
       - memcached
       - mariadb
     restart: unless-stopped
-    container_name: php-nginx-${PHP_VERSION:-8.2}
+    container_name: wp-php-docker-${PHP_VERSION:-8.2}
 
   mariadb:
     image: mariadb:lts
