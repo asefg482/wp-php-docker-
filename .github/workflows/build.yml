@@ -54,5 +54,5 @@ jobs:
           build-args: |
             PHP_VERSION=${{ github.event.inputs.php_version || '8.2' }}
           tags: |
-            ghcr.io/${{ github.repository }}:${{ github.event.inputs.php_version || '8.2' }}
-            ghcr.io/${{ github.repository }}:latest
+            ghcr.io/${{ github.actor }}/php-nginx:${{ github.event.inputs.php_version || '8.2' }}
+            ghcr.io/${{ github.actor }}/php-nginx:latest
