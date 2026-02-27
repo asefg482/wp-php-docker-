@@ -7,3 +7,7 @@ data/
 
 # Environment
 .env
+
+# Add mac files
+**/.DS_Store
+.DS_Store
